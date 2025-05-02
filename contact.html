@@ -1,0 +1,92 @@
+<Doctype HTML>
+<html>
+	<head>
+		<title>Contact Me</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<nav style="background-color:#1E1E1E" class="navbar sticky-top">
+	
+			<div class="container-fluid justify-content-around">
+				
+				
+				<a style="color:lightgrey" class="nav-link" href="home.html">Home</a>
+				<a style="color:lightgrey" class="nav-link" href="about.html">About me</a>
+				<a style="color:lightgrey" class="nav-link" href="resume.html">Resume</a>
+				<a style="color:lightgrey" class="nav-link" href="activities.html">Personal activities</a>
+				<a style="color:lightgrey" class="nav-link" href="projects.html">Projects</a>
+				<a style="color:lightgrey" class="nav-link" href="inspiration.html">Inspiration</a>
+				<a style="color:#3B82F6" class="nav-link" href="contact.html">Contact</a>
+				
+			</div>
+		</nav>
+	
+		<div class="container">
+			<div class="col text-center">
+				<br><br><br><br>
+				<h1 style="font-size:52">Contact Me</h1>
+				<p>If you have any questions, reach out!</p>
+				<div class="row">		
+					<div class="col">
+						<div class="col border">
+							<img style="width:200px;height:200px;" src="img/contact/email.png">
+							<br><strong>Email</strong>
+							<br><p>mcmahone2@mymail.nku.edu<p>
+							<a class="btn btn-primary" id="copyEmailBtn" role="button">Copy to clipboard</a>
+							<span style="font-size:25px" id="copiedText" class="text-success d-none">Copied!</span>
+							
+							<script>
+								const email = "mcmahone2@mymail.nku.edu";
+								const copyBtn = document.getElementById("copyEmailBtn");
+								const copiedText = document.getElementById("copiedText");
+
+								copyBtn.addEventListener("click", () => {
+									navigator.clipboard.writeText(email).then(() => {
+										copyBtn.classList.add("d-none");        
+										copiedText.classList.remove("d-none");
+									});
+								});
+							</script>
+						
+						</div>
+						<div class="col border">
+							<img style="width:200px;height:200px;" src="img/contact/facebook.png">
+							<br><strong>Facebook</strong>
+							<br><p>Ethan McMahon<p>
+							<a class="btn btn-primary" href="https://facebook.com/ethan.mcmahon.875" role="button">Visit Facebook</a>
+						</div>
+					</div>
+					<div class="col">
+						<div class="col border">
+							<img style="width:200px;height:200px;" src="img/contact/instagram.png">
+							<br><strong>Instagram</strong>
+							<br><p>@ethan_mcmahon875<p>
+							<a class="btn btn-primary" href="https://www.instagram.com/ethan_mcmahon875?igsh=M3R4dWkxcTc0eXh0&utm_source=qr" role="button">Visit Instagram</a>
+						</div>
+						<div class="col border">
+							<img style="width:200px;height:200px;" src="img/contact/twitter.png">
+							<br><strong>Twitter</strong>
+							<br><p>@Ethan_875<p>
+							<a class="btn btn-primary" href="https://twitter.com/Ethan_875" role="button">Visit Twitter</a>
+						</div>
+					</div>
+				</div>
+				<br><br><br><br>
+			</div>
+		</div>
+	
+		<div style="background-color:#1E1E1E" class="container-fluid">
+			<br>
+			<p style="color:lightgrey">Last updated: April 2025</p>
+			<br>
+		</div>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+	</body>
+</html>
